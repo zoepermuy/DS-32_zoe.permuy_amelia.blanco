@@ -5,7 +5,7 @@ import java.util.Arrays;
 public record Triangle(int angle1, int angle2, int angle3) {
     public Triangle {
         if (angle1 + angle2 + angle3 != 180) {
-            throw new IllegalArgumentException("La suma de los angulos no suman 180 grados.");
+            throw new IllegalArgumentException("La suma de los angulos no suman 180 grados");
         }
     }
 

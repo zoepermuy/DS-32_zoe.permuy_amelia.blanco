@@ -59,7 +59,7 @@ public class StringCount {
                     hasLowerCase = true;
                 } else if (Character.isDigit(c)) {
                     hasDigit = true;
-                } else if (c == '?' || c == '@' || c == '#' || c == '$' || c == '.' || c == ',') {
+                } else if (c == '?' || c == '@' || c == '#' || c == '$' || c == '.' || c == ',') { //caracter especial
                     hasSpecialChar = true;
                 }
             }

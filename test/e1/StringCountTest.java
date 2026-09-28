@@ -51,16 +51,16 @@ class StringCountTest {
     @Test
     void isPasswordSafe() {
         assertFalse(StringCount.isPasswordSafe("contra")); //sin 8 caracteres
-        assertFalse(StringCount.isPasswordSafe("contraseña?8")); //sin mayuscula
-        assertFalse(StringCount.isPasswordSafe("CONTRASEÑA?8")); //sin minuscula
-        assertFalse(StringCount.isPasswordSafe("Contraseña?")); //sin numero
-        assertFalse(StringCount.isPasswordSafe("Contraseña8")); //sin caracter
-        assertFalse(StringCount.isPasswordSafe("Contraseña¿8")); //sin caracter
-        assertTrue(StringCount.isPasswordSafe("Contraseña?8"));
-        assertTrue(StringCount.isPasswordSafe("Contraseña#8"));
-        assertTrue(StringCount.isPasswordSafe("Contraseña@8"));
-        assertTrue(StringCount.isPasswordSafe("Contraseña$8"));
-        assertTrue(StringCount.isPasswordSafe("Contraseña.8"));
-        assertTrue(StringCount.isPasswordSafe("Contraseña,8"));
+        assertFalse(StringCount.isPasswordSafe("contrasena?8")); //sin mayuscula
+        assertFalse(StringCount.isPasswordSafe("CONTRASENA?8")); //sin minuscula
+        assertFalse(StringCount.isPasswordSafe("Contrasena?")); //sin numero
+        assertFalse(StringCount.isPasswordSafe("Contrasena8")); //sin caracter
+        assertFalse(StringCount.isPasswordSafe("Contrasena¿8")); //sin caracter
+        assertTrue(StringCount.isPasswordSafe("Contrasena?8"));
+        assertTrue(StringCount.isPasswordSafe("Contrasena#8"));
+        assertTrue(StringCount.isPasswordSafe("Contrasena@8"));
+        assertTrue(StringCount.isPasswordSafe("Contrasena$8"));
+        assertTrue(StringCount.isPasswordSafe("Contrasena.8"));
+        assertTrue(StringCount.isPasswordSafe("Contrasena,8"));
     }
 }

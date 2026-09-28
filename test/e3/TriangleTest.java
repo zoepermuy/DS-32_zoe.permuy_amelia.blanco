@@ -25,9 +25,9 @@ class TriangleTest {
 
     @Test
     void isRight() {
-        Triangle t1 = new Triangle(10, 90, 80); //recto en a2
-        Triangle t2 = new Triangle(90, 60, 30); //recto en a1
-        Triangle t3 = new Triangle(40, 50, 90); //recto en a3
+        Triangle t1 = new Triangle(10, 90, 80); //recto a2
+        Triangle t2 = new Triangle(90, 60, 30); //recto a1
+        Triangle t3 = new Triangle(40, 50, 90); //recto a3
         Triangle t4 = new Triangle(40, 60, 80); //agudo
 
         assertTrue(t1.isRight());
